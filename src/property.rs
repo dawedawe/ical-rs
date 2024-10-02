@@ -2,7 +2,7 @@
 //!
 //! Split the result of `LineReader` into property. A property contains:
 //! - A name formated in uppercase.
-//! - An optional list of parameters represented by a vector of `(key/value)` tuple . The key is
+//! - An optional list of parameters represented by a vector of `(key/value)` tuple. The key is
 //!   formatted in uppercase and the value stay untouched.
 //! - A value stay untouched.
 //!
