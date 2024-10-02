@@ -57,7 +57,7 @@ jobs:
         run: rustup default nightly
 
       - name: Run Fuzzer
-        run: cargo +nightly fuzz run ical -- -max_total_time=10
+        run: cargo +nightly fuzz run ical -- -max_total_time=10 -Ctarget-feature=-crt-static
 
   lints:
     name: Lints
