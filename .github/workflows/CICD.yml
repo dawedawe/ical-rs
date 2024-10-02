@@ -60,7 +60,7 @@ jobs:
         run: rustup target add x86_64-unknown-linux-musl
       
       - name: Run Fuzzer
-        run: cargo +nightly fuzz run ical -- -max_total_time=10
+        run: cargo +nightly fuzz run ical -- -max_total_time=10 -Ctarget-feature=-crt-static
 
   lints:
     name: Lints
